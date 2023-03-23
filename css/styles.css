@@ -1,0 +1,247 @@
+
+/* обычно группируют те стили которые относяться к одной группе ( например все H таги )
+-я могу сделать просто тег H, чтобы стиль был один и тот же? - почему-то не получакется объединить  */
+
+
+body{
+background: rgba(0, 0, 0, 0.5);
+background-image: url("../img/Rudens-kauss-2021-start.jpg");
+background-blend-mode: darken;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+
+}
+
+h1{
+  color: rgb(255, 60, 0); 
+  font-style: italic; 
+  font-family: courier; 
+}
+.logo-text{
+height: 80;
+}
+
+p{
+color: white;
+font-size: large;
+font-family: cursive;
+
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: nowrap; 
+  position: fixed;
+  top: 0; 
+  justify-content: space-between;
+  width: 100%;
+  opacity: 1;
+  z-index: 1
+}
+
+h2{
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+h3{
+  margin-left: 10px;
+}
+
+.leftfoto{
+float:left;
+margin: 4px 10px 2px 0px;
+border:1px solid #CCC;
+padding:6px;
+}
+
+.rightfoto{
+float: right;
+margin: 4px 10px 2px 0px;
+border:1px solid #CCC;
+padding:6px;
+}
+
+.fa {
+display: block;
+padding: 20px;
+font-size: 30px;
+width: 50px;
+text-align: center;
+text-decoration: none;
+}
+
+.fa:hover {
+opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+.text-color{
+  color:blueviolet
+
+}
+.text-color-red{
+  color: rgb(138, 7, 33);
+}
+
+.text-size-big{
+  font-size: 40;
+}
+.color-yellow{
+  color: yellow;
+}
+.css-box-model{
+  margin: 120 20 20 20;
+  padding: 20px 50px;
+  color: red;
+  text-align: center;
+  border: 10px double blue;
+  font-family: 'Rubik Glitch', cursive; 
+  animation: css-box-model 1.5s both 1s;
+}
+@-webkit-keyframes css-box-model{
+0% { 
+  transform: scale(0.1); 
+  -webkit-transform: scale(0.1);
+  opacity: 0;
+} 
+
+60% { 
+  transform: scale(1.2); 
+  -webkit-transform: scale(1.2);
+  opacity: 1;
+} 
+
+100% { 
+  transform: scale(1); 
+  -webkit-transform: scale(1);
+}
+}
+
+@keyframes css-box-model{
+0% { 
+  transform: scale(0.1); 
+  -webkit-transform: scale(0.1);
+  opacity: 0;
+} 
+
+60% { 
+  transform: scale(1.2); 
+  -webkit-transform: scale(1.2);
+  opacity: 1;
+} 
+
+100% { 
+  transform: scale(1); 
+  -webkit-transform: scale(1);
+}
+}
+
+.button{
+position: relative;
+}
+
+/* нужно что-бы все название классов были через kebab-case, по стандарту - исправил, но 
+так было прописано в интернете, откуда скачал сам код */
+.my-button {
+-moz-box-shadow: 3px 4px 0px 0px #1564ad;
+-webkit-box-shadow: 3px 4px 0px 0px #1564ad;
+box-shadow: 3px 4px 0px 0px #1564ad;
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5));
+background:-moz-linear-gradient(top, #79bbff 5%, #378de5 100%);
+background:-webkit-linear-gradient(top, #79bbff 5%, #378de5 100%);
+background:-o-linear-gradient(top, #79bbff 5%, #378de5 100%);
+background:-ms-linear-gradient(top, #79bbff 5%, #378de5 100%);
+background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5',GradientType=0);
+background-color:#79bbff;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+border-radius:5px;
+border:1px solid #337bc4;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Arial;
+font-size:17px;
+font-weight:bold;
+padding: 12px 44px;
+text-decoration:none;
+text-shadow:0px 1px 0px #528ecc;
+      margin: 5px;}
+.my-button:hover {
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff));
+background:-moz-linear-gradient(top, #378de5 5%, #79bbff 100%);
+background:-webkit-linear-gradient(top, #378de5 5%, #79bbff 100%);
+background:-o-linear-gradient(top, #378de5 5%, #79bbff 100%);
+background:-ms-linear-gradient(top, #378de5 5%, #79bbff 100%);
+background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff',GradientType=0);
+background-color:#378de5;
+}
+.my-button:active {
+position:relative;
+top:1px;
+}
+
+.boat {
+  transition: 1s; 
+ }
+.boat:hover {
+  transform: scale(1.2); 
+ }
+
+
+
+#gall {
+position: relative;
+padding-top: 50%;
+-moz-user-select: none; user-select: none;
+}
+
+#gall img {
+position: absolute;
+top: 25%;
+left: 12.5%;
+max-width: 24.5%;
+max-height: 49.5%;
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+cursor: zoom-in;
+transition: .2s;
+}
+#gall img:nth-child(4n-2) {left: 37.5%;}
+#gall img:nth-child(4n-1) {left: 62.5%;}
+#gall img:nth-child(4n) {left: 87.5%;}
+#gall img:nth-child(n+5) {top: 75%;}
+
+#gall img:focus {
+position: absolute;
+top: 50%;
+left: 50%;
+z-index: 1;
+max-width: 100%;
+max-height: 100%;
+outline: none;
+
+}
+#gall img:focus ~ div {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: #fff;
+cursor: zoom-out;
+}
